@@ -12,12 +12,12 @@ function Header() {
     state.items.reduce((total, item) => total + item.quantity, 0)
   )
 
-  console.log(user)
+  // console.log(user)
 
   const createClerkPasskey = async () => {
     try {
       const response = await user?.createPasskey()
-      console.log(response)
+      // console.log(response)
     } catch (error) {
       console.error('Error:', JSON.stringify(error, null, 2))
     }
